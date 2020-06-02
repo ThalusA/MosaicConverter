@@ -54,7 +54,7 @@ def get_mosaic_palette(delete_flag):
     cache = list()
     with scandir("mosaics") as mosaics:
         for entry in mosaics:
-            if not entry.is_file():
+            if not entry.is_file() or entry.name == ".gitkeep":
                 continue
             try:
                 image_hash = get_image_hash(entry.path)
