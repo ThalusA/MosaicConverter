@@ -129,7 +129,9 @@ dmypy.json
 .pyre/
 
 # Project specific gitignore
-mosaics/*
+mosaics/*.jpg
+mosaics/*.jpeg
+mosaics/*.png
 download_all.sh
 cache
 *.png
